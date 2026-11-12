@@ -1421,23 +1421,30 @@ button {
 
   .mobile-menu.is-open { display: flex; }
 
-  /* Logo no fluxo, entre o menu e o botão, com respiro dos dois lados */
+  /* Barra mobile em 3 colunas: menu | logo centralizado | comprar.
+     As laterais têm a mesma largura, então o logo fica no centro exato. */
+  .header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    column-gap: clamp(10px, 3vw, 18px);
+  }
+  .menu-toggle { justify-self: start; }
+
   .header__logo {
     order: 0;
-    flex: 1 1 auto;
     min-width: 0;
     justify-content: center;
-    margin: 0 clamp(10px, 3vw, 18px);
+    margin: 0;
   }
   .header__logo img {
     width: auto;
     height: auto;
     min-width: 0;
     max-width: 100%;
-    max-height: clamp(22px, 4vw, 28px);
+    max-height: clamp(20px, 4vw, 26px);
   }
 
-  .header__cta { order: 1; }
+  .header__cta { order: 1; justify-self: end; }
 }
 
 @media (max-width: 680px) {
@@ -1453,7 +1460,13 @@ button {
     justify-content: center;
   }
 
-  .btn--header { padding: 0 18px; }
+  /* Botão comprar mais compacto no mobile */
+  .btn--header {
+    padding: 0 14px;
+    height: 34px;
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+  }
 
   .stats {
     grid-template-columns: 1fr;
@@ -1474,4 +1487,10 @@ button {
   }
 
   .fan__caption { font-size: 14px; }
+}
+
+/* Celulares pequenos: logo e botão um pouco menores para manter o respiro */
+@media (max-width: 380px) {
+  .header__logo img { max-height: 18px; }
+  .btn--header { padding: 0 12px; font-size: 11px; }
 }

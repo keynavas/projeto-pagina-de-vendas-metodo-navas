@@ -1421,15 +1421,20 @@ button {
 
   .mobile-menu.is-open { display: flex; }
 
+  /* Logo no fluxo, entre o menu e o botão, com respiro dos dois lados */
   .header__logo {
     order: 0;
     flex: 1 1 auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    min-width: 0;
     justify-content: center;
-    pointer-events: none;
+    margin: 0 clamp(10px, 3vw, 18px);
+  }
+  .header__logo img {
+    width: auto;
+    height: auto;
+    min-width: 0;
+    max-width: 100%;
+    max-height: clamp(22px, 4vw, 28px);
   }
 
   .header__cta { order: 1; }

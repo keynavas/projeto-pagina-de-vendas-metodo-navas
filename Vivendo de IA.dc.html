@@ -88,13 +88,13 @@
       <span data-m="menulabel">Categorias</span>
     </div>
     <nav ref="{{ navRef }}" data-m="nav" style="position: relative; display: flex; align-items: center; flex-wrap: wrap; justify-content: center; align-self: stretch; flex: 1 1 auto; row-gap: 6px; column-gap: clamp(16px, 2vw, 34px); padding: 0 clamp(8px, 1.5vw, 24px); min-width: 0; line-height: 1;">
-      <a href="#numeros" data-nav="numeros" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Estatística</a>
       <a href="#oportunidade" data-nav="oportunidade" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Oportunidade</a>
+      <a href="#projetos" data-nav="projetos" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Projetos</a>
       <a href="#metodo" data-nav="metodo" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">O Método</a>
       <a href="#historia" data-nav="historia" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">História</a>
-      <a href="#projetos" data-nav="projetos" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Projetos</a>
-      <a href="#depoimentos" data-nav="depoimentos" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Feedbacks</a>
-      <a href="#preco" data-nav="preco" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Preço</a>
+      <a href="#numeros" data-nav="numeros" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Resultado</a>
+      <a href="#depoimentos" data-nav="depoimentos" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Avaliações<br></a>
+      <a href="#preco" data-nav="preco" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Custo</a>
       <a href="#faq" data-nav="faq" style="color: #FFFFFF; font-size: clamp(14px, 1.15vw, 16px); font-weight: 600; letter-spacing: 0.01em; white-space: nowrap;" style-hover="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">FAQ</a>
       <span ref="{{ indicatorRef }}" style="position: absolute; bottom: 2px; left: 0; width: 0; height: 3px; background: #009BFF; border-radius: 2px; box-shadow: 0 0 12px rgba(0,155,255,0.9); opacity: 0; transition: left 0.35s ease, width 0.35s ease, opacity 0.3s ease; pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></span>
     </nav>
@@ -103,12 +103,12 @@
     </div>
     <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
       <div data-m="menupanel" onClick="{{ onMenuNav }}" style="display: none; position: absolute; top: calc(100% + 10px); left: 0; right: 0; z-index: 120; max-height: 70vh; overflow-y: auto; flex-direction: column; padding: 10px 20px 18px; border-radius: 26px; background: rgba(17,24,39,0.88); backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%); border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 22px 50px rgba(0,0,0,0.6); color-scheme: dark only; forced-color-adjust: none;">
-        <a href="#numeros" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">Estatística</a>
         <a href="#oportunidade" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">Oportunidade</a>
+        <a href="#projetos" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">Projetos</a>
         <a href="#metodo" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">O Método</a>
         <a href="#historia" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">História</a>
-        <a href="#projetos" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">Projetos</a>
-        <a href="#depoimentos" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">Feedbacks</a>
+        <a href="#numeros" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">Resultado</a>
+        <a href="#depoimentos" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">Depoimentos</a>
         <a href="#preco" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">Preço</a>
         <a href="#faq" style="padding: 14px 4px; font-size: 15px; font-weight: 600; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">FAQ</a>
       </div>
@@ -136,33 +136,9 @@
     </div>
   </section>
 
-  <!-- NÚMEROS -->
-  <section id="numeros" style="position: relative; z-index: 1; background: #050505; border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -34px 80px rgba(0,0,0,0.85); width: 100%; box-sizing: border-box; margin: 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2)); text-align: center;">
-    <p style="margin: 0 0 20px; font-size: 12px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Estatística do método</p>
-    <h2 style="font-weight: 900; font-size: clamp(28px, 4vw, 42px); line-height: 1.15; margin: 0 auto 20px; max-width: 700px;">O que já foi construído<br>com esse processo.</h2>
-    <p style="font-size: 16px; line-height: 1.7; color: #9CA3AF; margin: 0 auto 36px; max-width: 520px;">Resultado de aplicar o método na prática: clientes atendidos, sites entregues e anos de mercado.</p>
-    <div style="display: inline-flex; margin: 0 0 clamp(48px, 7vw, 72px);">
-      <a href="#projetos" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px; font-size: 14px; font-weight: 700; color: #FFFFFF; background: rgba(255,255,255,0.06); backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%); border: 1px solid rgba(255,255,255,0.20); transition: transform 0.25s, border-color 0.25s;" style-hover="transform: translateY(-1px); border-color: rgba(255,255,255,0.45);">Quero esses resultados <span style="font-size: 16px; line-height: 1;">→</span></a>
-    </div>
-    <div data-m="numgrid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 2vw, 20px); max-width: 760px; margin: 0 auto;">
-      <div style="position: relative; overflow: hidden; background: rgba(255,255,255,0.045); backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%); border: 1px solid rgba(255,255,255,0.11); border-radius: 18px; padding: clamp(34px, 5vw, 52px) 20px;" style-before="content: ''; position: absolute; top: 0; left: 50%; width: 130%; height: 100%; transform: translateX(-50%); background: radial-gradient(60% 55% at 50% 0%, rgba(255,255,255,0.13) 0%, rgba(255,255,255,0) 70%); pointer-events: none;">
-        <p style="position: relative; margin: 0 0 12px; font-size: clamp(32px, 5vw, 44px); font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF;" data-count="280" data-pre="+" data-suf="">+0</p>
-        <p data-m="label" style="position: relative; margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #9CA3AF;">Clientes atendidos</p>
-      </div>
-      <div style="position: relative; overflow: hidden; background: rgba(255,255,255,0.045); backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%); border: 1px solid rgba(255,255,255,0.11); border-radius: 18px; padding: clamp(34px, 5vw, 52px) 20px;" style-before="content: ''; position: absolute; top: 0; left: 50%; width: 130%; height: 100%; transform: translateX(-50%); background: radial-gradient(60% 55% at 50% 0%, rgba(255,255,255,0.13) 0%, rgba(255,255,255,0) 70%); pointer-events: none;">
-        <p style="position: relative; margin: 0 0 12px; font-size: clamp(32px, 5vw, 44px); font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF;" data-count="2" data-pre="+" data-suf="">+0</p>
-        <p data-m="label" style="position: relative; margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #9CA3AF;">Anos no mercado</p>
-      </div>
-      <div style="grid-column: 1 / -1; position: relative; overflow: hidden; background: rgba(255,255,255,0.045); backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%); border: 1px solid rgba(255,255,255,0.11); border-radius: 18px; padding: clamp(34px, 5vw, 52px) 20px;" style-before="content: ''; position: absolute; top: 0; left: 50%; width: 130%; height: 100%; transform: translateX(-50%); background: radial-gradient(60% 55% at 50% 0%, rgba(255,255,255,0.13) 0%, rgba(255,255,255,0) 70%); pointer-events: none;">
-        <p style="position: relative; margin: 0 0 12px; font-size: clamp(32px, 5vw, 44px); font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF;" data-count="200" data-pre="+" data-suf="">+0</p>
-        <p data-m="label" style="position: relative; margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #9CA3AF;">Sites desenvolvidos</p>
-      </div>
-    </div>
-  </section>
-
   <!-- NOVA OPORTUNIDADE -->
-  <section id="oportunidade" data-nocard="1" style="position: relative; z-index: 2; background: radial-gradient(120% 120% at 50% 0%, #111827 0%, #111827 45%, #050505 100%); border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -34px 80px rgba(0,0,0,0.85); width: 100%; box-sizing: border-box; overflow: hidden; margin: -56px 0 0; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: clamp(140px, 20vw, 240px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2)) clamp(180px, 24vw, 300px); text-align: center;">
-    <div aria-hidden="true" style="position: absolute; z-index: -1; top: -220px; left: 50%; transform: translateX(-50%); width: 900px; max-width: 100%; height: 520px; background: radial-gradient(circle, rgba(0,155,255,0.35) 0%, rgba(0,155,255,0) 68%); filter: blur(20px); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
+  <section id="oportunidade" data-nocard="1" style="position: relative; z-index: 1; background: linear-gradient(180deg, #050505 0%, #090D16 22%, #0D1220 50%, #090D16 78%, #050505 100%); border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -40px 90px rgba(0,0,0,0.9); width: 100%; box-sizing: border-box; overflow: hidden; margin: -56px 0 0; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: clamp(140px, 20vw, 240px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2)) clamp(180px, 24vw, 300px); text-align: center;">
+    <div aria-hidden="true" style="position: absolute; z-index: -1; top: 0; left: 0; right: 0; height: 900px; background: radial-gradient(ellipse 50% 45% at 50% 42%, rgba(0,155,255,0.16) 0%, rgba(0,155,255,0.05) 50%, rgba(0,155,255,0) 80%); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
     <div aria-hidden="true" style="position: absolute; z-index: -1; inset: 0; background-image: linear-gradient(rgba(0,155,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,155,255,0.06) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, transparent 72%); -webkit-mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, transparent 72%); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
     <h2 style="color: #FFFFFF; font-weight: 900; font-size: clamp(28px, 4vw, 42px); margin: 0 auto 24px; max-width: 900px; line-height: 1.2;">Você não precisa aprender programação para começar.</h2>
     <p style="font-size: 18px; line-height: 1.7; color: #C4CAD6; margin: 0 auto; max-width: 720px;">Com IA, o que levava meses hoje leva dias. O que vale dinheiro é saber usar as ferramentas certas e entregar o que a empresa precisa.</p>
@@ -171,8 +147,47 @@
     </div>
   </section>
 
+  <!-- PROJETOS / PROVAS -->
+  <section id="projetos" style="position: relative; z-index: 2; background: #050505; border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -40px 90px rgba(0,0,0,0.9); width: 100%; box-sizing: border-box; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2));">
+    <h2 style="font-weight: 900; font-size: clamp(28px, 4vw, 42px); margin: 0 0 16px; text-align: center;">Veja o que você será capaz de criar</h2>
+    <p data-m="body" style="text-align: center; font-size: 15px; line-height: 1.6; color: #E5E5E5; margin: 0 auto 56px; max-width: 560px; text-wrap: pretty;">Lojas virtuais, landing pages e sites institucionais projetos reais feitos com o método.</p>
+    <div data-fan="1" style="position: relative; height: calc(clamp(270px, 46vw, 680px) * 0.5625 * 1.6); overflow: visible; margin: 0 auto; max-width: 1240px;">
+      <div data-fan-card="0" role="button" tabindex="0" aria-label="Site para Imóvel de Alto Padrão" style="position: absolute; left: 50%; top: 50%; width: clamp(270px, 46vw, 680px); aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #111827; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transform: translate3d(-50%,-50%,0); transform-origin: 50% 50%; transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity 0.7s ease, box-shadow 0.5s, border-color 0.5s, filter 0.5s; opacity: 0; cursor: pointer; z-index: 5;">
+        <img decoding="async" src="uploads/site-casa-alto-padrao.webp" alt="Site Casa de Campo à venda" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; pointer-events: none;">
+      </div>
+      <div data-fan-card="1" role="button" tabindex="0" aria-label="Site para Médico Endocrinologista" style="position: absolute; left: 50%; top: 50%; width: clamp(270px, 46vw, 680px); aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #111827; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transform: translate3d(-50%,-50%,0); transform-origin: 50% 50%; transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity 0.7s ease, box-shadow 0.5s, border-color 0.5s, filter 0.5s; opacity: 0; cursor: pointer; z-index: 4;">
+        <img decoding="async" src="uploads/dr-eder.webp?v=2" alt="Site do Dr. Eder Ferreira — Medicina do Esporte e Endocrinologia" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; pointer-events: none;">
+      </div>
+      <div data-fan-card="2" role="button" tabindex="0" aria-label="Site para Psicólogos" style="position: absolute; left: 50%; top: 50%; width: clamp(270px, 46vw, 680px); aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #111827; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transform: translate3d(-50%,-50%,0); transform-origin: 50% 50%; transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity 0.7s ease, box-shadow 0.5s, border-color 0.5s, filter 0.5s; opacity: 0; cursor: pointer; z-index: 2;">
+        <img decoding="async" src="uploads/thaliamartins.webp?v=2" alt="Landing page de psicóloga" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; pointer-events: none;">
+      </div>
+      <div data-fan-card="3" role="button" tabindex="0" aria-label="Site para consultório de pediatria" style="position: absolute; left: 50%; top: 50%; width: clamp(270px, 46vw, 680px); aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #111827; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transform: translate3d(-50%,-50%,0); transform-origin: 50% 50%; transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity 0.7s ease, box-shadow 0.5s, border-color 0.5s, filter 0.5s; opacity: 0; cursor: pointer; z-index: 3;">
+        <img decoding="async" src="uploads/dr-andre.webp?v=2" alt="Site do pediatra Dr. André" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; pointer-events: none;">
+      </div>
+      <div data-fan-card="4" role="button" tabindex="0" aria-label="Loja virtual completa para e-commerce" style="position: absolute; left: 50%; top: 50%; width: clamp(270px, 46vw, 680px); aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #111827; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transform: translate3d(-50%,-50%,0); transform-origin: 50% 50%; transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity 0.7s ease, box-shadow 0.5s, border-color 0.5s, filter 0.5s; opacity: 0; cursor: pointer; z-index: 1;">
+        <img decoding="async" src="uploads/arenacolecionaveis.webp?v=2" alt="Loja virtual Arena Colecionáveis" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; pointer-events: none;">
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin: clamp(28px, 4vw, 44px) 0 0;">
+      <div style="display: grid; justify-items: center;">
+        <p data-m="fancap" data-fan-cap="0" style="grid-area: 1 / 1; white-space: nowrap; margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: #E5E5E5; text-align: center; opacity: 0; transform: translateY(6px); transition: opacity 0.4s, transform 0.4s;">Site para Imóvel de Alto Padrão</p>
+        <p data-m="fancap" data-fan-cap="1" style="grid-area: 1 / 1; white-space: nowrap; margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: #E5E5E5; text-align: center; opacity: 0; transform: translateY(6px); transition: opacity 0.4s, transform 0.4s;">Site para Médico Endocrinologista</p>
+        <p data-m="fancap" data-fan-cap="2" style="grid-area: 1 / 1; white-space: nowrap; margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: #E5E5E5; text-align: center; opacity: 0; transform: translateY(6px); transition: opacity 0.4s, transform 0.4s;">Site para Psicólogos</p>
+        <p data-m="fancap" data-fan-cap="3" style="grid-area: 1 / 1; white-space: nowrap; margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: #E5E5E5; text-align: center; opacity: 0; transform: translateY(6px); transition: opacity 0.4s, transform 0.4s;">Site para consultório de pediatria</p>
+        <p data-m="fancap" data-fan-cap="4" style="grid-area: 1 / 1; white-space: nowrap; margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: #E5E5E5; text-align: center; opacity: 1; transform: translateY(0px); transition: opacity 0.4s, transform 0.4s;">Loja virtual completa para e-commerce</p>
+      </div>
+      <div style="display: flex; gap: 0;">
+        <button data-fan-dot="0" aria-label="Site para Imóvel de Alto Padrão" style="display: flex; align-items: center; padding: 12px 4px; border: none; background: transparent; cursor: pointer;"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background-color: rgba(255,255,255,0.28); transition: width 0.4s cubic-bezier(.2,.8,.2,1), background-color 0.3s;"></span></button>
+        <button data-fan-dot="1" aria-label="Site para Médico Endocrinologista" style="display: flex; align-items: center; padding: 12px 4px; border: none; background: transparent; cursor: pointer;"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background-color: rgba(255,255,255,0.28); transition: width 0.4s cubic-bezier(.2,.8,.2,1), background-color 0.3s;"></span></button>
+        <button data-fan-dot="2" aria-label="Site para Psicólogos" style="display: flex; align-items: center; padding: 12px 4px; border: none; background: transparent; cursor: pointer;"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background-color: rgba(255,255,255,0.28); transition: width 0.4s cubic-bezier(.2,.8,.2,1), background-color 0.3s;"></span></button>
+        <button data-fan-dot="3" aria-label="Site para consultório de pediatria" style="display: flex; align-items: center; padding: 12px 4px; border: none; background: transparent; cursor: pointer;"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background-color: rgba(255,255,255,0.28); transition: width 0.4s cubic-bezier(.2,.8,.2,1), background-color 0.3s;"></span></button>
+        <button data-fan-dot="4" aria-label="Loja virtual completa para e-commerce" style="display: flex; align-items: center; padding: 12px 4px; border: none; background: transparent; cursor: pointer;"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background-color: rgba(255,255,255,0.28); transition: width 0.4s cubic-bezier(.2,.8,.2,1), background-color 0.3s;"></span></button>
+      </div>
+    </div>
+  </section>
+
   <!-- O MÉTODO / CURSO -->
-  <section id="metodo" data-nocard="1" style="position: relative; z-index: 4; background: #050505; border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -34px 80px rgba(0,0,0,0.85); width: 100%; box-sizing: border-box; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2));">
+  <section id="metodo" data-nocard="1" style="position: relative; z-index: 3; background: #050505; border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -40px 90px rgba(0,0,0,0.9); width: 100%; box-sizing: border-box; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2));">
     <h2 style="font-weight: 900; font-size: clamp(28px, 4vw, 42px); margin: 0 0 clamp(40px, 6vw, 64px); text-align: center; line-height: 1.15;">O que você vai <span style="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">aprender</span></h2>
     <div data-tl="1" style="position: relative; max-width: 820px; margin: 0 auto;">
       <div aria-hidden="true" style="position: absolute; top: 40px; bottom: 40px; left: calc(clamp(44px, 7vw, 64px) / 2); width: 2px; transform: translateX(-1px); background: rgba(255,255,255,0.10); border-radius: 2px; overflow: hidden;"><div data-tl-fill="1" style="position: absolute; left: 0; right: 0; top: 0; height: 120px; will-change: transform; background: linear-gradient(180deg, rgba(0,155,255,0) 0%, #009BFF 50%, rgba(0,155,255,0) 100%); box-shadow: 0 0 12px rgba(0,155,255,0.8); color-scheme: dark only; forced-color-adjust: none;"></div></div>
@@ -215,8 +230,8 @@
   </section>
 
   <!-- SUA HISTÓRIA -->
-  <section id="historia" data-nocard="1" style="position: relative; z-index: 6; background: radial-gradient(120% 120% at 50% 0%, #111827 0%, #111827 45%, #050505 100%); border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -34px 80px rgba(0,0,0,0.85); width: 100%; box-sizing: border-box; overflow: hidden; margin: -56px 0 0; min-height: 100vh; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: clamp(40px, 7vw, 96px); align-items: center; padding: clamp(110px, 16vw, 190px) max(clamp(22px, 5vw, 40px), calc((100% - 1240px) / 2)) clamp(130px, 18vw, 210px);">
-    <div aria-hidden="true" style="position: absolute; z-index: -1; top: -220px; left: 50%; transform: translateX(-50%); width: 900px; max-width: 100%; height: 520px; background: radial-gradient(circle, rgba(0,155,255,0.35) 0%, rgba(0,155,255,0) 68%); filter: blur(20px); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
+  <section id="historia" data-nocard="1" style="position: relative; z-index: 4; background: linear-gradient(180deg, #050505 0%, #090D16 22%, #0D1220 50%, #090D16 78%, #050505 100%); border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -40px 90px rgba(0,0,0,0.9); width: 100%; box-sizing: border-box; overflow: hidden; margin: -56px 0 0; min-height: 100vh; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: clamp(40px, 7vw, 96px); align-items: center; padding: clamp(110px, 16vw, 190px) max(clamp(22px, 5vw, 40px), calc((100% - 1240px) / 2)) clamp(130px, 18vw, 210px);">
+    <div aria-hidden="true" style="position: absolute; z-index: -1; top: 0; left: 0; right: 0; height: 900px; background: radial-gradient(ellipse 50% 45% at 50% 42%, rgba(0,155,255,0.16) 0%, rgba(0,155,255,0.05) 50%, rgba(0,155,255,0) 80%); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
     <div aria-hidden="true" style="position: absolute; z-index: -1; inset: 0; background-image: linear-gradient(rgba(0,155,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,155,255,0.06) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, transparent 72%); -webkit-mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, transparent 72%); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
     <div style="display: flex; justify-content: center; order: 0;">
       <div style="position: relative; width: 100%; max-width: 500px; border-radius: 24px; padding: 3px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,0.5);" style-before="content: ''; position: absolute; top: -60%; left: -60%; width: 220%; height: 220%; background: conic-gradient(from 0deg, rgba(0,155,255,0) 0deg, rgba(0,155,255,0) 150deg, #009BFF 230deg, #009BFF 270deg, #009BFF 310deg, rgba(0,155,255,0) 360deg); animation: spinNeon 3.5s linear infinite; color-scheme: dark only; forced-color-adjust: none;">
@@ -224,7 +239,7 @@
       </div>
     </div>
     <div style="display: flex; flex-direction: column; gap: clamp(18px, 2.4vw, 24px); max-width: 600px; width: 100%; justify-self: center;">
-      <p data-m="label" style="margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Minha história</p>
+      
       <h2 style="color: #FFFFFF; font-weight: 900; font-size: clamp(30px, 4.4vw, 50px); margin: 0; line-height: 1.12; letter-spacing: -0.02em; text-wrap: balance;">Eu também comecei sem saber como transformar isso em <span style="color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">renda</span></h2>
       <p style="font-size: clamp(17px, 1.5vw, 19px); line-height: 1.75; color: #FFFFFF; margin: 0; text-wrap: pretty;">Meu nome é <span style="color: #009BFF; font-weight: 700; color-scheme: dark only; forced-color-adjust: none;">Yuri Navas</span>. Sou formado em Marketing, mas mesmo com uma formação profissional, eu ainda tinha dificuldades financeiras.</p>
       <blockquote style="margin: 4px 0; padding: clamp(18px, 2.4vw, 24px) clamp(20px, 2.8vw, 28px); border-radius: 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10); box-shadow: 0 10px 30px rgba(0,0,0,0.3); font-size: clamp(17px, 1.5vw, 19px); line-height: 1.7; color: #C4CAD6; font-style: italic; text-wrap: pretty;">"Chegava ao ponto de querer sair com minha namorada, levar ela para comer em um lugar legal, mas muitas vezes precisava pensar: 'Será que eu posso gastar esse dinheiro?'"</blockquote>
@@ -234,48 +249,33 @@
     </div>
   </section>
 
-  <!-- PROJETOS / PROVAS -->
-  <section id="projetos" style="position: relative; z-index: 7; background: #050505; border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -34px 80px rgba(0,0,0,0.85); width: 100%; box-sizing: border-box; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2));">
-    <h2 style="font-weight: 900; font-size: clamp(28px, 4vw, 42px); margin: 0 0 16px; text-align: center;">Veja o que você será capaz de criar</h2>
-    <p data-m="body" style="text-align: center; font-size: 15px; line-height: 1.6; color: #E5E5E5; margin: 0 auto 56px; max-width: 560px; text-wrap: pretty;">Lojas virtuais, landing pages e sites institucionais projetos reais feitos com o método.</p>
-    <div data-fan="1" style="position: relative; height: calc(clamp(270px, 46vw, 680px) * 0.5625 * 1.6); overflow: visible; margin: 0 auto; max-width: 1240px;">
-      <div data-fan-card="0" role="button" tabindex="0" aria-label="Site para Imóvel de Alto Padrão" style="position: absolute; left: 50%; top: 50%; width: clamp(270px, 46vw, 680px); aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #111827; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transform: translate3d(-50%,-50%,0); transform-origin: 50% 50%; transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity 0.7s ease, box-shadow 0.5s, border-color 0.5s, filter 0.5s; opacity: 0; cursor: pointer; z-index: 5;">
-        <img decoding="async" src="uploads/site-casa-alto-padrao.webp" alt="Site Casa de Campo à venda" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; pointer-events: none;">
-      </div>
-      <div data-fan-card="1" role="button" tabindex="0" aria-label="Site para Médico Endocrinologista" style="position: absolute; left: 50%; top: 50%; width: clamp(270px, 46vw, 680px); aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #111827; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transform: translate3d(-50%,-50%,0); transform-origin: 50% 50%; transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity 0.7s ease, box-shadow 0.5s, border-color 0.5s, filter 0.5s; opacity: 0; cursor: pointer; z-index: 4;">
-        <img decoding="async" src="uploads/dr-eder.webp?v=2" alt="Site do Dr. Eder Ferreira — Medicina do Esporte e Endocrinologia" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; pointer-events: none;">
-      </div>
-      <div data-fan-card="2" role="button" tabindex="0" aria-label="Site para Psicólogos" style="position: absolute; left: 50%; top: 50%; width: clamp(270px, 46vw, 680px); aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #111827; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transform: translate3d(-50%,-50%,0); transform-origin: 50% 50%; transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity 0.7s ease, box-shadow 0.5s, border-color 0.5s, filter 0.5s; opacity: 0; cursor: pointer; z-index: 2;">
-        <img decoding="async" src="uploads/thaliamartins.webp?v=2" alt="Landing page de psicóloga" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; pointer-events: none;">
-      </div>
-      <div data-fan-card="3" role="button" tabindex="0" aria-label="Site para consultório de pediatria" style="position: absolute; left: 50%; top: 50%; width: clamp(270px, 46vw, 680px); aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #111827; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transform: translate3d(-50%,-50%,0); transform-origin: 50% 50%; transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity 0.7s ease, box-shadow 0.5s, border-color 0.5s, filter 0.5s; opacity: 0; cursor: pointer; z-index: 3;">
-        <img decoding="async" src="uploads/dr-andre.webp?v=2" alt="Site do pediatra Dr. André" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; pointer-events: none;">
-      </div>
-      <div data-fan-card="4" role="button" tabindex="0" aria-label="Loja virtual completa para e-commerce" style="position: absolute; left: 50%; top: 50%; width: clamp(270px, 46vw, 680px); aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #111827; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.5); transform: translate3d(-50%,-50%,0); transform-origin: 50% 50%; transition: transform 1s cubic-bezier(.2,.8,.2,1), opacity 0.7s ease, box-shadow 0.5s, border-color 0.5s, filter 0.5s; opacity: 0; cursor: pointer; z-index: 1;">
-        <img decoding="async" src="uploads/arenacolecionaveis.webp?v=2" alt="Loja virtual Arena Colecionáveis" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; pointer-events: none;">
-      </div>
+  <!-- NÚMEROS -->
+  <section id="numeros" style="position: relative; z-index: 5; background: #050505; border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -40px 90px rgba(0,0,0,0.9); width: 100%; box-sizing: border-box; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2)); text-align: center;">
+    
+    <h2 style="font-weight: 900; font-size: clamp(28px, 4vw, 42px); line-height: 1.15; margin: 0 auto 20px; max-width: 700px;">Os resultados que eu já obtive</h2>
+    <p style="font-size: 16px; line-height: 1.7; color: #9CA3AF; margin: 0 auto 36px; max-width: 520px;">Resultado de aplicar o método na prática: clientes atendidos, sites entregues e anos de mercado.</p>
+    <div style="display: inline-flex; margin: 0 0 clamp(48px, 7vw, 72px);">
+      <a href="#projetos" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px; font-size: 14px; font-weight: 700; color: #FFFFFF; background: rgba(255,255,255,0.06); backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%); border: 1px solid rgba(255,255,255,0.20); transition: transform 0.25s, border-color 0.25s;" style-hover="transform: translateY(-1px); border-color: rgba(255,255,255,0.45);">Quero esses resultados <span style="font-size: 16px; line-height: 1;">→</span></a>
     </div>
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin: clamp(28px, 4vw, 44px) 0 0;">
-      <div style="display: grid; justify-items: center;">
-        <p data-m="fancap" data-fan-cap="0" style="grid-area: 1 / 1; white-space: nowrap; margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: #E5E5E5; text-align: center; opacity: 0; transform: translateY(6px); transition: opacity 0.4s, transform 0.4s;">Site para Imóvel de Alto Padrão</p>
-        <p data-m="fancap" data-fan-cap="1" style="grid-area: 1 / 1; white-space: nowrap; margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: #E5E5E5; text-align: center; opacity: 0; transform: translateY(6px); transition: opacity 0.4s, transform 0.4s;">Site para Médico Endocrinologista</p>
-        <p data-m="fancap" data-fan-cap="2" style="grid-area: 1 / 1; white-space: nowrap; margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: #E5E5E5; text-align: center; opacity: 0; transform: translateY(6px); transition: opacity 0.4s, transform 0.4s;">Site para Psicólogos</p>
-        <p data-m="fancap" data-fan-cap="3" style="grid-area: 1 / 1; white-space: nowrap; margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: #E5E5E5; text-align: center; opacity: 0; transform: translateY(6px); transition: opacity 0.4s, transform 0.4s;">Site para consultório de pediatria</p>
-        <p data-m="fancap" data-fan-cap="4" style="grid-area: 1 / 1; white-space: nowrap; margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.01em; color: #E5E5E5; text-align: center; opacity: 1; transform: translateY(0px); transition: opacity 0.4s, transform 0.4s;">Loja virtual completa para e-commerce</p>
+    <div data-m="numgrid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 2vw, 20px); max-width: 760px; margin: 0 auto;">
+      <div style="position: relative; overflow: hidden; background: rgba(255,255,255,0.045); backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%); border: 1px solid rgba(255,255,255,0.11); border-radius: 18px; padding: clamp(34px, 5vw, 52px) 20px;" style-before="content: ''; position: absolute; top: 0; left: 50%; width: 130%; height: 100%; transform: translateX(-50%); background: radial-gradient(60% 55% at 50% 0%, rgba(255,255,255,0.13) 0%, rgba(255,255,255,0) 70%); pointer-events: none;">
+        <p style="position: relative; margin: 0 0 12px; font-size: clamp(32px, 5vw, 44px); font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF;" data-count="280" data-pre="+" data-suf="">+0</p>
+        <p data-m="label" style="position: relative; margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #9CA3AF;">Clientes atendidos</p>
       </div>
-      <div style="display: flex; gap: 0;">
-        <button data-fan-dot="0" aria-label="Site para Imóvel de Alto Padrão" style="display: flex; align-items: center; padding: 12px 4px; border: none; background: transparent; cursor: pointer;"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background-color: rgba(255,255,255,0.28); transition: width 0.4s cubic-bezier(.2,.8,.2,1), background-color 0.3s;"></span></button>
-        <button data-fan-dot="1" aria-label="Site para Médico Endocrinologista" style="display: flex; align-items: center; padding: 12px 4px; border: none; background: transparent; cursor: pointer;"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background-color: rgba(255,255,255,0.28); transition: width 0.4s cubic-bezier(.2,.8,.2,1), background-color 0.3s;"></span></button>
-        <button data-fan-dot="2" aria-label="Site para Psicólogos" style="display: flex; align-items: center; padding: 12px 4px; border: none; background: transparent; cursor: pointer;"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background-color: rgba(255,255,255,0.28); transition: width 0.4s cubic-bezier(.2,.8,.2,1), background-color 0.3s;"></span></button>
-        <button data-fan-dot="3" aria-label="Site para consultório de pediatria" style="display: flex; align-items: center; padding: 12px 4px; border: none; background: transparent; cursor: pointer;"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background-color: rgba(255,255,255,0.28); transition: width 0.4s cubic-bezier(.2,.8,.2,1), background-color 0.3s;"></span></button>
-        <button data-fan-dot="4" aria-label="Loja virtual completa para e-commerce" style="display: flex; align-items: center; padding: 12px 4px; border: none; background: transparent; cursor: pointer;"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background-color: rgba(255,255,255,0.28); transition: width 0.4s cubic-bezier(.2,.8,.2,1), background-color 0.3s;"></span></button>
+      <div style="position: relative; overflow: hidden; background: rgba(255,255,255,0.045); backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%); border: 1px solid rgba(255,255,255,0.11); border-radius: 18px; padding: clamp(34px, 5vw, 52px) 20px;" style-before="content: ''; position: absolute; top: 0; left: 50%; width: 130%; height: 100%; transform: translateX(-50%); background: radial-gradient(60% 55% at 50% 0%, rgba(255,255,255,0.13) 0%, rgba(255,255,255,0) 70%); pointer-events: none;">
+        <p style="position: relative; margin: 0 0 12px; font-size: clamp(32px, 5vw, 44px); font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF;" data-count="2" data-pre="+" data-suf="">+0</p>
+        <p data-m="label" style="position: relative; margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #9CA3AF;">Anos no mercado</p>
+      </div>
+      <div style="grid-column: 1 / -1; position: relative; overflow: hidden; background: rgba(255,255,255,0.045); backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%); border: 1px solid rgba(255,255,255,0.11); border-radius: 18px; padding: clamp(34px, 5vw, 52px) 20px;" style-before="content: ''; position: absolute; top: 0; left: 50%; width: 130%; height: 100%; transform: translateX(-50%); background: radial-gradient(60% 55% at 50% 0%, rgba(255,255,255,0.13) 0%, rgba(255,255,255,0) 70%); pointer-events: none;">
+        <p style="position: relative; margin: 0 0 12px; font-size: clamp(32px, 5vw, 44px); font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF;" data-count="200" data-pre="+" data-suf="">+0</p>
+        <p data-m="label" style="position: relative; margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #9CA3AF;">Sites desenvolvidos</p>
       </div>
     </div>
   </section>
 
   <!-- DEPOIMENTOS -->
-  <section id="depoimentos" style="position: relative; z-index: 8; background: #050505; border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -34px 80px rgba(0,0,0,0.85); width: 100%; box-sizing: border-box; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2));">
-    <h2 style="font-weight: 900; font-size: clamp(28px, 4vw, 42px); margin: 0 0 16px; text-align: center;">Histórias de quem já começou</h2>
+  <section id="depoimentos" style="position: relative; z-index: 6; background: #050505; border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -40px 90px rgba(0,0,0,0.9); width: 100%; box-sizing: border-box; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2));">
+    <h2 style="font-weight: 900; font-size: clamp(28px, 4vw, 42px); margin: 0 0 16px; text-align: center;">Avaliações dos alunos</h2>
     <p data-m="body" style="text-align: center; font-size: 15px; line-height: 1.6; color: #E5E5E5; margin: 0 auto 56px; max-width: 560px; text-wrap: pretty;">Avaliações de alunos depois de aplicar o método.</p>
     <div data-rv="1" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: clamp(14px, 2vw, 20px); max-width: 1180px; margin: 0 auto; align-items: start;">
       <div style="display: flex; flex-direction: column; gap: 12px; padding: clamp(20px, 2.4vw, 26px); border-radius: 22px; background: rgba(255,255,255,0.045); backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%); border: 1px solid rgba(255,255,255,0.12); box-shadow: inset 0 1px 0 rgba(255,255,255,0.08); box-sizing: border-box;">
@@ -283,9 +283,9 @@
           <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #E53935; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; color: #FFFFFF; color-scheme: dark only; forced-color-adjust: none;">R</span>
           <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
             <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">Rafael Souza</span>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
               <span aria-label="5 estrelas" style="font-size: 15px; letter-spacing: 2px; color: #FBBC04; line-height: 1; color-scheme: dark only; forced-color-adjust: none;">★★★★★</span>
-              <span style="font-size: 13px; color: #9CA3AF;">2 semanas atrás</span>
+              <span style="font-size: 13px; color: #9CA3AF; white-space: nowrap;">2 semanas atrás</span>
             </div>
           </div>
         </div>
@@ -296,9 +296,9 @@
           <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #26A69A; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; color: #FFFFFF; color-scheme: dark only; forced-color-adjust: none;">L</span>
           <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
             <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">Lucas Ferreira</span>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
               <span aria-label="5 estrelas" style="font-size: 15px; letter-spacing: 2px; color: #FBBC04; line-height: 1; color-scheme: dark only; forced-color-adjust: none;">★★★★★</span>
-              <span style="font-size: 13px; color: #9CA3AF;">1 mês atrás</span>
+              <span style="font-size: 13px; color: #9CA3AF; white-space: nowrap;">1 mês atrás</span>
             </div>
           </div>
         </div>
@@ -309,9 +309,9 @@
           <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #8E5BD6; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; color: #FFFFFF; color-scheme: dark only; forced-color-adjust: none;">T</span>
           <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
             <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">Thais Almeida</span>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
               <span aria-label="5 estrelas" style="font-size: 15px; letter-spacing: 2px; color: #FBBC04; line-height: 1; color-scheme: dark only; forced-color-adjust: none;">★★★★★</span>
-              <span style="font-size: 13px; color: #9CA3AF;">3 semanas atrás</span>
+              <span style="font-size: 13px; color: #9CA3AF; white-space: nowrap;">3 semanas atrás</span>
             </div>
           </div>
         </div>
@@ -322,9 +322,9 @@
           <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #F2B233; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; color: #FFFFFF; color-scheme: dark only; forced-color-adjust: none;">M</span>
           <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
             <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">Mariana Costa</span>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
               <span aria-label="5 estrelas" style="font-size: 15px; letter-spacing: 2px; color: #FBBC04; line-height: 1; color-scheme: dark only; forced-color-adjust: none;">★★★★★</span>
-              <span style="font-size: 13px; color: #9CA3AF;">1 mês atrás</span>
+              <span style="font-size: 13px; color: #9CA3AF; white-space: nowrap;">1 mês atrás</span>
             </div>
           </div>
         </div>
@@ -335,9 +335,9 @@
           <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #2E9BF0; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; color: #FFFFFF; color-scheme: dark only; forced-color-adjust: none;">D</span>
           <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
             <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">Diego Ramos</span>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
               <span aria-label="5 estrelas" style="font-size: 15px; letter-spacing: 2px; color: #FBBC04; line-height: 1; color-scheme: dark only; forced-color-adjust: none;">★★★★★</span>
-              <span style="font-size: 13px; color: #9CA3AF;">2 meses atrás</span>
+              <span style="font-size: 13px; color: #9CA3AF; white-space: nowrap;">2 meses atrás</span>
             </div>
           </div>
         </div>
@@ -348,9 +348,9 @@
           <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #E0457B; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; color: #FFFFFF; color-scheme: dark only; forced-color-adjust: none;">A</span>
           <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
             <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">Ana Paula</span>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
               <span aria-label="5 estrelas" style="font-size: 15px; letter-spacing: 2px; color: #FBBC04; line-height: 1; color-scheme: dark only; forced-color-adjust: none;">★★★★★</span>
-              <span style="font-size: 13px; color: #9CA3AF;">3 semanas atrás</span>
+              <span style="font-size: 13px; color: #9CA3AF; white-space: nowrap;">3 semanas atrás</span>
             </div>
           </div>
         </div>
@@ -361,9 +361,9 @@
           <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #43A047; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; color: #FFFFFF; color-scheme: dark only; forced-color-adjust: none;">P</span>
           <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
             <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">Pedro Henrique</span>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
               <span aria-label="5 estrelas" style="font-size: 15px; letter-spacing: 2px; color: #FBBC04; line-height: 1; color-scheme: dark only; forced-color-adjust: none;">★★★★★</span>
-              <span style="font-size: 13px; color: #9CA3AF;">1 mês atrás</span>
+              <span style="font-size: 13px; color: #9CA3AF; white-space: nowrap;">1 mês atrás</span>
             </div>
           </div>
         </div>
@@ -374,9 +374,9 @@
           <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #FF8A3D; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; color: #FFFFFF; color-scheme: dark only; forced-color-adjust: none;">G</span>
           <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
             <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">Gabriel Oliveira</span>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
               <span aria-label="5 estrelas" style="font-size: 15px; letter-spacing: 2px; color: #FBBC04; line-height: 1; color-scheme: dark only; forced-color-adjust: none;">★★★★★</span>
-              <span style="font-size: 13px; color: #9CA3AF;">2 meses atrás</span>
+              <span style="font-size: 13px; color: #9CA3AF; white-space: nowrap;">2 meses atrás</span>
             </div>
           </div>
         </div>
@@ -387,9 +387,9 @@
           <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #5C6BC0; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; color: #FFFFFF; color-scheme: dark only; forced-color-adjust: none;">J</span>
           <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
             <span style="font-size: 16px; font-weight: 700; color: #FFFFFF;">Juliana Martins</span>
-            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;">
               <span aria-label="5 estrelas" style="font-size: 15px; letter-spacing: 2px; color: #FBBC04; line-height: 1; color-scheme: dark only; forced-color-adjust: none;">★★★★★</span>
-              <span style="font-size: 13px; color: #9CA3AF;">1 mês atrás</span>
+              <span style="font-size: 13px; color: #9CA3AF; white-space: nowrap;">1 mês atrás</span>
             </div>
           </div>
         </div>
@@ -399,11 +399,11 @@
   </section>
 
   <!-- PREÇO -->
-  <section id="preco" style="position: relative; z-index: 9; background: radial-gradient(120% 120% at 50% 0%, #111827 0%, #111827 45%, #050505 100%); border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -34px 80px rgba(0,0,0,0.85); width: 100%; box-sizing: border-box; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2)); text-align: center; overflow: hidden;">
-    <div aria-hidden="true" style="position: absolute; top: -220px; left: 50%; transform: translateX(-50%); width: 900px; height: 520px; background: radial-gradient(circle, rgba(0,155,255,0.35) 0%, rgba(0,155,255,0) 68%); filter: blur(20px); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
+  <section id="preco" data-nocard="1" style="position: relative; z-index: 7; background: linear-gradient(180deg, #050505 0%, #090D16 22%, #0D1220 50%, #090D16 78%, #050505 100%); border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -40px 90px rgba(0,0,0,0.9); width: 100%; box-sizing: border-box; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2)); text-align: center; overflow: hidden;">
+    <div aria-hidden="true" style="position: absolute; z-index: -1; top: 0; left: 0; right: 0; height: 900px; background: radial-gradient(ellipse 50% 45% at 50% 42%, rgba(0,155,255,0.16) 0%, rgba(0,155,255,0.05) 50%, rgba(0,155,255,0) 80%); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
     <div aria-hidden="true" style="position: absolute; inset: 0; background-image: linear-gradient(rgba(0,155,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,155,255,0.06) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, transparent 72%); -webkit-mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, transparent 72%); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
-    <p data-m="label" style="position: relative; margin: 0 0 18px; font-size: 12px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #009BFF; color-scheme: dark only; forced-color-adjust: none;">Investimento</p>
-    <h2 style="position: relative; font-weight: 900; font-size: clamp(28px, 4vw, 42px); line-height: 1.15; margin: 0 auto clamp(32px, 5vw, 44px); max-width: 720px; text-wrap: balance;">Acesso completo ao Método Navas</h2>
+    
+    <h2 style="position: relative; font-weight: 900; font-size: clamp(28px, 4vw, 42px); line-height: 1.15; margin: 0 auto clamp(32px, 5vw, 44px); max-width: 720px; text-wrap: balance;">Comece hoje a criar e vender sites com IA</h2>
     <div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 18px; margin: 0 auto clamp(44px, 6vw, 64px);">
       <p style="margin: 0; font-size: clamp(18px, 2.2vw, 24px); font-weight: 800; color: #FFFFFF; text-transform: uppercase; letter-spacing: 0.08em;">A oferta acaba em</p>
       <div style="display: flex; align-items: flex-start; justify-content: center; gap: clamp(6px, 1.4vw, 14px);">
@@ -447,9 +447,8 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq" style="position: relative; z-index: 10; background: radial-gradient(120% 120% at 50% 0%, #111827 0%, #111827 45%, #050505 100%); border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -34px 80px rgba(0,0,0,0.85); width: 100%; box-sizing: border-box; overflow: hidden; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2));">
-    <div aria-hidden="true" style="position: absolute; z-index: -1; top: -220px; left: 50%; transform: translateX(-50%); width: 900px; max-width: 100%; height: 520px; background: radial-gradient(circle, rgba(0,155,255,0.35) 0%, rgba(0,155,255,0) 68%); filter: blur(20px); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
-    <div aria-hidden="true" style="position: absolute; z-index: -1; inset: 0; background-image: linear-gradient(rgba(0,155,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,155,255,0.06) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, transparent 72%); -webkit-mask-image: radial-gradient(ellipse at 50% 40%, #000 0%, transparent 72%); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
+  <section id="faq" style="position: relative; z-index: 8; background: #050505; border-top: none; border-radius: clamp(22px, 4vw, 40px) clamp(22px, 4vw, 40px) 0 0; box-shadow: 0 -40px 90px rgba(0,0,0,0.9); width: 100%; box-sizing: border-box; overflow: hidden; margin: -56px 0 0; padding: clamp(100px, 15vw, 172px) max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2));">
+    <div aria-hidden="true" style="position: absolute; z-index: -1; bottom: -260px; left: 50%; transform: translateX(-50%); width: 1100px; max-width: 140%; height: 520px; background: radial-gradient(ellipse, rgba(0,102,204,0.22) 0%, rgba(0,102,204,0) 70%); filter: blur(30px); pointer-events: none; color-scheme: dark only; forced-color-adjust: none;"></div>
     <h2 style="color: #FFFFFF; font-weight: 900; font-size: clamp(28px, 4vw, 42px); margin: 0 0 56px; text-align: center;">Suas principais dúvidas</h2>
     <div style="display: flex; flex-direction: column; max-width: 880px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.12);">
       <sc-for list="{{ faqs }}" as="faq" hint-placeholder-count="5">
@@ -496,7 +495,7 @@ class Component extends DCLogic {
   slide = 0;
 
   componentDidMount() {
-    this.ids = ["numeros", "dores", "oportunidade", "mecanismo", "historia", "metodo", "projetos", "faq"];
+    this.ids = ["oportunidade", "projetos", "metodo", "historia", "numeros", "depoimentos", "preco", "faq"];
     this.onScroll = () => this.updateIndicator();
     window.addEventListener("scroll", this.onScroll, { passive: true });
     window.addEventListener("resize", this.onScroll);

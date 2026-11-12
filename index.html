@@ -36,13 +36,13 @@
     </button>
 
     <nav class="nav" aria-label="Navegação principal">
-      <a class="nav__link" href="#numeros" data-nav="numeros">Estatística</a>
       <a class="nav__link" href="#oportunidade" data-nav="oportunidade">Oportunidade</a>
+      <a class="nav__link" href="#projetos" data-nav="projetos">Projetos</a>
       <a class="nav__link" href="#metodo" data-nav="metodo">O Método</a>
       <a class="nav__link" href="#historia" data-nav="historia">História</a>
-      <a class="nav__link" href="#projetos" data-nav="projetos">Projetos</a>
-      <a class="nav__link" href="#depoimentos" data-nav="depoimentos">Feedbacks</a>
-      <a class="nav__link" href="#preco" data-nav="preco">Preço</a>
+      <a class="nav__link" href="#numeros" data-nav="numeros">Resultado</a>
+      <a class="nav__link" href="#depoimentos" data-nav="depoimentos">Avaliações</a>
+      <a class="nav__link" href="#preco" data-nav="preco">Custo</a>
       <a class="nav__link" href="#faq" data-nav="faq">FAQ</a>
       <span class="nav__indicator" aria-hidden="true"></span>
     </nav>
@@ -54,12 +54,12 @@
     </div>
 
     <div class="mobile-menu" id="mobile-menu">
-      <a href="#numeros">Estatística</a>
       <a href="#oportunidade">Oportunidade</a>
+      <a href="#projetos">Projetos</a>
       <a href="#metodo">O Método</a>
       <a href="#historia">História</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#depoimentos">Feedbacks</a>
+      <a href="#numeros">Resultado</a>
+      <a href="#depoimentos">Depoimentos</a>
       <a href="#preco">Preço</a>
       <a href="#faq">FAQ</a>
     </div>
@@ -89,38 +89,55 @@
     </div>
   </section>
 
-  <!-- ===================== NÚMEROS ===================== -->
-  <section id="numeros" class="section section--dark section--numeros">
-    <p class="eyebrow">Estatística do método</p>
-    <h2 class="section-title section-title--numeros">O que já foi construído<br>com esse processo.</h2>
-    <p class="section-text section-text--numeros">Resultado de aplicar o método na prática: clientes atendidos, sites entregues e anos de mercado.</p>
-    <div class="numeros__cta">
-      <a class="btn btn--glass" href="#projetos">Quero esses resultados <span class="btn__arrow btn__arrow--sm">→</span></a>
-    </div>
-    <div class="stats">
-      <div class="stat-card glass">
-        <p class="stat-card__value" data-count="280" data-pre="+" data-suf="">+0</p>
-        <p class="stat-card__label">Clientes atendidos</p>
-      </div>
-      <div class="stat-card glass">
-        <p class="stat-card__value" data-count="2" data-pre="+" data-suf="">+0</p>
-        <p class="stat-card__label">Anos no mercado</p>
-      </div>
-      <div class="stat-card stat-card--wide glass">
-        <p class="stat-card__value" data-count="200" data-pre="+" data-suf="">+0</p>
-        <p class="stat-card__label">Sites desenvolvidos</p>
-      </div>
-    </div>
-  </section>
-
   <!-- ===================== OPORTUNIDADE ===================== -->
-  <section id="oportunidade" class="section section--gradient section--oportunidade" data-nocard="1">
-    <div class="section-glow" aria-hidden="true"></div>
+  <section id="oportunidade" class="section section--fade section--oportunidade" data-nocard="1">
+    <div class="section-glow section-glow--soft" aria-hidden="true"></div>
     <div class="section-grid" aria-hidden="true"></div>
     <h2 class="section-title section-title--oportunidade">Você não precisa aprender programação para começar.</h2>
     <p class="oportunidade__text">Com IA, o que levava meses hoje leva dias. O que vale dinheiro é saber usar as ferramentas certas e entregar o que a empresa precisa.</p>
     <div class="oportunidade__cta">
       <a class="btn btn--solid" href="#preco">Quero começar agora <span class="btn__arrow btn__arrow--sm">→</span></a>
+    </div>
+  </section>
+
+  <!-- ===================== PROJETOS ===================== -->
+  <section id="projetos" class="section section--dark section--projetos">
+    <h2 class="section-title section-title--center">Veja o que você será capaz de criar</h2>
+    <p class="section-lead">Lojas virtuais, landing pages e sites institucionais projetos reais feitos com o método.</p>
+
+    <div class="fan" data-fan="1">
+      <div class="fan__card" data-fan-card="0" role="button" tabindex="0" aria-label="Site para Imóvel de Alto Padrão">
+        <img decoding="async" src="assets/images/projetos/casa-alto-padrao.webp" alt="Site Casa de Campo à venda">
+      </div>
+      <div class="fan__card" data-fan-card="1" role="button" tabindex="0" aria-label="Site para Médico Endocrinologista">
+        <img decoding="async" src="assets/images/projetos/dr-eder.webp" alt="Site do Dr. Eder Ferreira — Medicina do Esporte e Endocrinologia">
+      </div>
+      <div class="fan__card" data-fan-card="2" role="button" tabindex="0" aria-label="Site para Psicólogos">
+        <img decoding="async" src="assets/images/projetos/thalia-martins.webp" alt="Landing page de psicóloga">
+      </div>
+      <div class="fan__card" data-fan-card="3" role="button" tabindex="0" aria-label="Site para consultório de pediatria">
+        <img decoding="async" src="assets/images/projetos/dr-andre.webp" alt="Site do pediatra Dr. André">
+      </div>
+      <div class="fan__card" data-fan-card="4" role="button" tabindex="0" aria-label="Loja virtual completa para e-commerce">
+        <img decoding="async" src="assets/images/projetos/arena-colecionaveis.webp" alt="Loja virtual Arena Colecionáveis">
+      </div>
+    </div>
+
+    <div class="fan__footer">
+      <div class="fan__captions">
+        <p class="fan__caption is-active" data-fan-cap="0">Site para Imóvel de Alto Padrão</p>
+        <p class="fan__caption" data-fan-cap="1">Site para Médico Endocrinologista</p>
+        <p class="fan__caption" data-fan-cap="2">Site para Psicólogos</p>
+        <p class="fan__caption" data-fan-cap="3">Site para consultório de pediatria</p>
+        <p class="fan__caption" data-fan-cap="4">Loja virtual completa para e-commerce</p>
+      </div>
+      <div class="dots">
+        <button class="dot" type="button" data-fan-dot="0" aria-label="Site para Imóvel de Alto Padrão"><span></span></button>
+        <button class="dot" type="button" data-fan-dot="1" aria-label="Site para Médico Endocrinologista"><span></span></button>
+        <button class="dot" type="button" data-fan-dot="2" aria-label="Site para Psicólogos"><span></span></button>
+        <button class="dot" type="button" data-fan-dot="3" aria-label="Site para consultório de pediatria"><span></span></button>
+        <button class="dot" type="button" data-fan-dot="4" aria-label="Loja virtual completa para e-commerce"><span></span></button>
+      </div>
     </div>
   </section>
 
@@ -170,8 +187,8 @@
   </section>
 
   <!-- ===================== MINHA HISTÓRIA ===================== -->
-  <section id="historia" class="section section--gradient section--historia" data-nocard="1">
-    <div class="section-glow" aria-hidden="true"></div>
+  <section id="historia" class="section section--fade section--historia" data-nocard="1">
+    <div class="section-glow section-glow--soft" aria-hidden="true"></div>
     <div class="section-grid" aria-hidden="true"></div>
     <div class="historia__photo-wrap">
       <div class="historia__photo neon-border neon-border--photo">
@@ -179,7 +196,6 @@
       </div>
     </div>
     <div class="historia__content">
-      <p class="eyebrow eyebrow--label">Minha história</p>
       <h2 class="historia__title">Eu também comecei sem saber como transformar isso em <span class="text-blue">renda</span></h2>
       <p class="historia__text historia__text--white">Meu nome é <span class="text-highlight">Yuri Navas</span>. Sou formado em Marketing, mas mesmo com uma formação profissional, eu ainda tinha dificuldades financeiras.</p>
       <blockquote class="historia__quote">"Chegava ao ponto de querer sair com minha namorada, levar ela para comer em um lugar legal, mas muitas vezes precisava pensar: 'Será que eu posso gastar esse dinheiro?'"</blockquote>
@@ -189,50 +205,32 @@
     </div>
   </section>
 
-  <!-- ===================== PROJETOS ===================== -->
-  <section id="projetos" class="section section--dark section--projetos">
-    <h2 class="section-title section-title--center">Veja o que você será capaz de criar</h2>
-    <p class="section-lead">Lojas virtuais, landing pages e sites institucionais projetos reais feitos com o método.</p>
-
-    <div class="fan" data-fan="1">
-      <div class="fan__card" data-fan-card="0" role="button" tabindex="0" aria-label="Site para Imóvel de Alto Padrão">
-        <img decoding="async" src="assets/images/projetos/casa-alto-padrao.webp" alt="Site Casa de Campo à venda">
-      </div>
-      <div class="fan__card" data-fan-card="1" role="button" tabindex="0" aria-label="Site para Médico Endocrinologista">
-        <img decoding="async" src="assets/images/projetos/dr-eder.webp" alt="Site do Dr. Eder Ferreira — Medicina do Esporte e Endocrinologia">
-      </div>
-      <div class="fan__card" data-fan-card="2" role="button" tabindex="0" aria-label="Site para Psicólogos">
-        <img decoding="async" src="assets/images/projetos/thalia-martins.webp" alt="Landing page de psicóloga">
-      </div>
-      <div class="fan__card" data-fan-card="3" role="button" tabindex="0" aria-label="Site para consultório de pediatria">
-        <img decoding="async" src="assets/images/projetos/dr-andre.webp" alt="Site do pediatra Dr. André">
-      </div>
-      <div class="fan__card" data-fan-card="4" role="button" tabindex="0" aria-label="Loja virtual completa para e-commerce">
-        <img decoding="async" src="assets/images/projetos/arena-colecionaveis.webp" alt="Loja virtual Arena Colecionáveis">
-      </div>
+  <!-- ===================== NÚMEROS ===================== -->
+  <section id="numeros" class="section section--dark section--numeros">
+    <h2 class="section-title section-title--numeros">Os resultados que eu já obtive</h2>
+    <p class="section-text section-text--numeros">Resultado de aplicar o método na prática: clientes atendidos, sites entregues e anos de mercado.</p>
+    <div class="numeros__cta">
+      <a class="btn btn--glass" href="#projetos">Quero esses resultados <span class="btn__arrow btn__arrow--sm">→</span></a>
     </div>
-
-    <div class="fan__footer">
-      <div class="fan__captions">
-        <p class="fan__caption is-active" data-fan-cap="0">Site para Imóvel de Alto Padrão</p>
-        <p class="fan__caption" data-fan-cap="1">Site para Médico Endocrinologista</p>
-        <p class="fan__caption" data-fan-cap="2">Site para Psicólogos</p>
-        <p class="fan__caption" data-fan-cap="3">Site para consultório de pediatria</p>
-        <p class="fan__caption" data-fan-cap="4">Loja virtual completa para e-commerce</p>
+    <div class="stats">
+      <div class="stat-card glass">
+        <p class="stat-card__value" data-count="280" data-pre="+" data-suf="">+0</p>
+        <p class="stat-card__label">Clientes atendidos</p>
       </div>
-      <div class="dots">
-        <button class="dot" type="button" data-fan-dot="0" aria-label="Site para Imóvel de Alto Padrão"><span></span></button>
-        <button class="dot" type="button" data-fan-dot="1" aria-label="Site para Médico Endocrinologista"><span></span></button>
-        <button class="dot" type="button" data-fan-dot="2" aria-label="Site para Psicólogos"><span></span></button>
-        <button class="dot" type="button" data-fan-dot="3" aria-label="Site para consultório de pediatria"><span></span></button>
-        <button class="dot" type="button" data-fan-dot="4" aria-label="Loja virtual completa para e-commerce"><span></span></button>
+      <div class="stat-card glass">
+        <p class="stat-card__value" data-count="2" data-pre="+" data-suf="">+0</p>
+        <p class="stat-card__label">Anos no mercado</p>
+      </div>
+      <div class="stat-card stat-card--wide glass">
+        <p class="stat-card__value" data-count="200" data-pre="+" data-suf="">+0</p>
+        <p class="stat-card__label">Sites desenvolvidos</p>
       </div>
     </div>
   </section>
 
   <!-- ===================== DEPOIMENTOS ===================== -->
   <section id="depoimentos" class="section section--dark section--depoimentos">
-    <h2 class="section-title section-title--center">Histórias de quem já começou</h2>
+    <h2 class="section-title section-title--center">Avaliações dos alunos</h2>
     <p class="section-lead">Avaliações de alunos depois de aplicar o método.</p>
 
     <div class="reviews" data-rv="1">
@@ -357,12 +355,11 @@
   </section>
 
   <!-- ===================== PREÇO ===================== -->
-  <section id="preco" class="section section--preco">
-    <div class="preco__glow" aria-hidden="true"></div>
+  <section id="preco" class="section section--fade section--preco" data-nocard="1">
+    <div class="section-glow section-glow--soft" aria-hidden="true"></div>
     <div class="preco__grid" aria-hidden="true"></div>
 
-    <p class="eyebrow eyebrow--relative">Investimento</p>
-    <h2 class="section-title section-title--preco">Acesso completo ao Método Navas</h2>
+    <h2 class="section-title section-title--preco">Comece hoje a criar e vender sites com IA</h2>
 
     <div class="countdown">
       <p class="countdown__title">A oferta acaba em</p>
@@ -408,9 +405,8 @@
   </section>
 
   <!-- ===================== FAQ ===================== -->
-  <section id="faq" class="section section--gradient section--faq">
-    <div class="section-glow" aria-hidden="true"></div>
-    <div class="section-grid" aria-hidden="true"></div>
+  <section id="faq" class="section section--dark section--faq">
+    <div class="faq__glow" aria-hidden="true"></div>
     <h2 class="section-title section-title--faq">Suas principais dúvidas</h2>
     <div class="faq">
       <div class="faq__item is-open">

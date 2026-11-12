@@ -35,13 +35,13 @@
   --gray-500: #B4BBC9;
 
   --gradient-blue: linear-gradient(180deg, #009BFF 0%, #0066CC 100%);
-  --gradient-section: radial-gradient(120% 120% at 50% 0%, #111827 0%, #111827 45%, #050505 100%);
+  --gradient-section: linear-gradient(180deg, #050505 0%, #090D16 22%, #0D1220 50%, #090D16 78%, #050505 100%);
   --neon-conic: conic-gradient(from 0deg, rgba(0,155,255,0) 0deg, rgba(0,155,255,0) 150deg, #009BFF 230deg, #009BFF 270deg, #009BFF 310deg, rgba(0,155,255,0) 360deg);
   --blur-glass: blur(22px) saturate(150%);
 
   --gutter: max(clamp(18px, 4vw, 32px), calc((100% - 1240px) / 2));
   --section-radius: clamp(22px, 4vw, 40px);
-  --section-shadow: 0 -34px 80px rgba(0,0,0,0.85);
+  --section-shadow: 0 -40px 90px rgba(0,0,0,0.9);
   --section-padding-y: clamp(100px, 15vw, 172px);
 
   --timeline-dot: clamp(44px, 7vw, 64px);
@@ -125,18 +125,6 @@ button {
   color: var(--blue);
   font-weight: 700;
 }
-
-/* Rótulo pequeno acima dos títulos */
-.eyebrow {
-  margin: 0 0 20px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--blue);
-}
-.eyebrow--label { margin: 0; }
-.eyebrow--relative { position: relative; margin: 0 0 18px; }
 
 /* Títulos de seção */
 .section-title {
@@ -551,24 +539,21 @@ button {
   box-shadow: var(--section-shadow);
 }
 .section--dark  { background: var(--black); border-top: none; }
-.section--gradient {
+.section--fade {
   background: var(--gradient-section);
   border-top: none;
   overflow: hidden;
 }
 
-/* Brilho azul e grade decorativa no topo das seções em degradê */
+/* Brilho azul suave e grade decorativa das seções em degradê */
 .section-glow {
   position: absolute;
   z-index: -1;
-  top: -220px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 900px;
-  max-width: 100%;
-  height: 520px;
-  background: radial-gradient(circle, rgba(0,155,255,0.35) 0%, rgba(0,155,255,0) 68%);
-  filter: blur(20px);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 900px;
+  background: radial-gradient(ellipse 50% 45% at 50% 42%, rgba(0,155,255,0.16) 0%, rgba(0,155,255,0.05) 50%, rgba(0,155,255,0) 80%);
   pointer-events: none;
 }
 .section-grid {
@@ -588,8 +573,7 @@ button {
 /* 08. NÚMEROS
    ========================================================================== */
 .section--numeros {
-  z-index: 1;
-  margin: 0;
+  z-index: 5;
   text-align: center;
 }
 
@@ -660,7 +644,7 @@ button {
 /* 09. OPORTUNIDADE
    ========================================================================== */
 .section--oportunidade {
-  z-index: 2;
+  z-index: 1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -692,7 +676,7 @@ button {
 
 /* 10. O MÉTODO (TIMELINE)
    ========================================================================== */
-.section--metodo { z-index: 4; }
+.section--metodo { z-index: 3; }
 
 .section-title--metodo {
   margin: 0 0 clamp(40px, 6vw, 64px);
@@ -798,7 +782,7 @@ button {
 /* 11. MINHA HISTÓRIA
    ========================================================================== */
 .section--historia {
-  z-index: 6;
+  z-index: 4;
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
@@ -880,7 +864,7 @@ button {
 
 /* 12. PROJETOS (LEQUE)
    ========================================================================== */
-.section--projetos { z-index: 7; }
+.section--projetos { z-index: 2; }
 
 .fan {
   position: relative;
@@ -950,7 +934,7 @@ button {
 
 /* 13. DEPOIMENTOS (AVALIAÇÕES)
    ========================================================================== */
-.section--depoimentos { z-index: 8; }
+.section--depoimentos { z-index: 6; }
 
 /* Grade usada sem JavaScript; com JS vira uma faixa rolando sozinha */
 .reviews {
@@ -1032,7 +1016,7 @@ button {
 .review__info {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10px;
 }
 
@@ -1045,6 +1029,7 @@ button {
 
 .review__date {
   font-size: 13px;
+  white-space: nowrap;
   color: var(--gray-400);
 }
 
@@ -1060,22 +1045,8 @@ button {
 /* 14. PREÇO
    ========================================================================== */
 .section--preco {
-  z-index: 9;
-  overflow: hidden;
+  z-index: 7;
   text-align: center;
-  background: radial-gradient(120% 120% at 50% 0%, #111827 0%, #111827 45%, #050505 100%);
-}
-
-.preco__glow {
-  position: absolute;
-  top: -220px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 900px;
-  height: 520px;
-  background: radial-gradient(circle, rgba(0,155,255,0.35) 0%, rgba(0,155,255,0) 68%);
-  filter: blur(20px);
-  pointer-events: none;
 }
 
 .preco__grid {
@@ -1303,7 +1274,21 @@ button {
 
 /* 15. FAQ
    ========================================================================== */
-.section--faq { z-index: 10; }
+.section--faq { z-index: 8; overflow: hidden; }
+
+.faq__glow {
+  position: absolute;
+  z-index: -1;
+  bottom: -260px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1100px;
+  max-width: 140%;
+  height: 520px;
+  background: radial-gradient(ellipse, rgba(0,102,204,0.22) 0%, rgba(0,102,204,0) 70%);
+  filter: blur(30px);
+  pointer-events: none;
+}
 
 .section-title--faq {
   margin: 0 0 56px;
@@ -1473,9 +1458,7 @@ button {
 
   .stat-card__label,
   .timeline__label,
-  .countdown__label,
-  .eyebrow--label,
-  .eyebrow--relative { font-size: 13px; }
+  .countdown__label { font-size: 13px; }
 
   .section-lead { font-size: 16px; }
 

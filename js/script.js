@@ -38,7 +38,7 @@
     const nav = $(".nav");
     const bar = $(".nav__indicator");
     if (!nav || !bar) return;
-    const ids = ["numeros", "oportunidade", "metodo", "historia", "projetos", "depoimentos", "preco", "faq"];
+    const ids = ["oportunidade", "projetos", "metodo", "historia", "numeros", "depoimentos", "preco", "faq"];
 
     const update = () => {
       let active = null;

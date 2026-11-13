@@ -168,21 +168,15 @@
   }
 
   /* ------------------------------------------------------------------
-     Contagem regressiva da oferta: 23h a partir da primeira visita
-     (salva no navegador do visitante)
+     Contagem regressiva da oferta: 22h, reinicia a cada acesso à página
      ------------------------------------------------------------------ */
   function setupCountdown() {
     const els = { h: $('[data-cd="h"]'), m: $('[data-cd="m"]'), s: $('[data-cd="s"]') };
     if (!els.h) return;
-    const KEY = "metodoNavasOfertaPrimeiraVisita";
-    const FULL = 23 * 3600 * 1000;
-    let first = 0;
-    try { first = parseInt(localStorage.getItem(KEY) || "0", 10); } catch (e) {}
-    if (!first || isNaN(first) || first > Date.now()) {
-      first = Date.now();
-      try { localStorage.setItem(KEY, String(first)); } catch (e) {}
-    }
-    const end = first + FULL;
+    const FULL = 22 * 3600 * 1000;
+    // limpa o registro antigo (versão que guardava a 1ª visita)
+    try { localStorage.removeItem("metodoNavasOfertaPrimeiraVisita"); } catch (e) {}
+    let end = Date.now() + FULL;
     const pad = (n) => String(n).padStart(2, "0");
     const tick = () => {
       const t = Math.floor(Math.max(0, end - Date.now()) / 1000);
@@ -194,7 +188,11 @@
     setInterval(tick, 1000);
     // atualiza na hora quando o visitante volta para a aba
     document.addEventListener("visibilitychange", tick);
-    window.addEventListener("pageshow", tick);
+    // se a página voltar do cache do navegador (botão voltar), conta como novo acesso
+    window.addEventListener("pageshow", (e) => {
+      if (e.persisted) end = Date.now() + FULL;
+      tick();
+    });
   }
 
   /* ------------------------------------------------------------------
